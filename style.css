@@ -1,0 +1,34 @@
+.divMain{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+    width: 60%;
+    border-radius: 20%;
+}
+
+body {
+    /* Define a imagem de fundo e algumas propriedades relacionadas */
+    background-image: url('img/lovebg4.png');
+    opacity: 1000%;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Garante que o background cubra a altura completa da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+.heart {
+    color: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
